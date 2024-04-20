@@ -1,6 +1,6 @@
 # Bring in deps
 from api_key import llm_key
-# from trubrics.integrations.streamlit import FeedbackCollector
+from trubrics.integrations.streamlit import FeedbackCollector
 
 import streamlit as st
 import google.generativeai as genai
