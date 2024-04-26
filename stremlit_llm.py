@@ -60,7 +60,7 @@ llm_api_key = api_key if api_key else llm_key
 genai.configure(api_key=llm_api_key)
 model = genai.GenerativeModel(model_name = "gemini-pro")
 
-st.write("Made with ❤️ by [Amogh Mahadev kokari](https://padlet.com/amoghkokari/my-portfolio-pmedtgib3l3qk1ma/wish/2605601586) ©️ 2024 _||_[linkedin](https://www.linkedin.com/in/amoghkokari/) _||_[Portfolio](https://padlet.com/amoghkokari/my-portfolio-pmedtgib3l3qk1ma) _||_[Github](https://github.com/amoghkokari)")
+st.write("Made with ❤️ by [Abhijeet Kislay](https://kislayabhi.github.io/projects/) ©️ 2024 _||_[linkedin](https://www.linkedin.com/in/abhijeetkislay/)")
 
 '''
 collector = FeedbackCollector(
