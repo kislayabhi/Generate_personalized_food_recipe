@@ -6,7 +6,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # App framework
-st.title('🍲 Get Food Recipe')
+st.title('Food Recipe Gemini Generator')
 st.subheader('Get Food Recipe based on Grocery, Time Required, Cuisines and Equipment available (all inputs are optional)')
 api_key =  st.text_input('Enter Google Generative AI API KEY (Required)')
 st.link_button("Click for API KEY (select create api key in new project)", "https://makersuite.google.com/app/apikey", type="secondary")
@@ -76,11 +76,11 @@ try:
         response = model.generate_content(prompt)
         st.write(response.text)
         st.write("Please leave feedback")
-        collector.st_feedback(
-            component="default",
-            feedback_type="thumbs",
-            open_feedback_label="[Optional] Provide additional feedback",
-            model="gemeni",
-            prompt_id=prompt,)
+        # collector.st_feedback(
+        #     component="default",
+        #     feedback_type="thumbs",
+        #     open_feedback_label="[Optional] Provide additional feedback",
+        #     model="gemeni",
+        #     prompt_id=prompt,)
 except Exception as error:
     st.write("Please check your Api key, probable issue", SystemExit(error))
