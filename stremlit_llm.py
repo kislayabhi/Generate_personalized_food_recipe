@@ -62,13 +62,13 @@ model = genai.GenerativeModel(model_name = "gemini-pro")
 
 st.write("Made with ❤️ by [Abhijeet Kislay](https://kislayabhi.github.io/projects/) ©️ 2024 _||_[linkedin](https://www.linkedin.com/in/abhijeetkislay/)")
 
-'''
-collector = FeedbackCollector(
-    project="default",
-    email=st.secrets["TRUBRICS_EMAIL"],
-    password=st.secrets["TRUBRICS_PASSWORD"],
-)
-'''
+
+#collector = FeedbackCollector(
+#    project="default",
+#    email=st.secrets["TRUBRICS_EMAIL"],
+#    password=st.secrets["TRUBRICS_PASSWORD"],
+#)
+
 
 # Show stuff to the screen if there's a prompt
 try:
